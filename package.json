@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/axia-js/dev",
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "license": "Apache-2",
+  "private": true,
+  "type": "commonjs",
+  "workspaces": [
+    "packages/*"
+  ],
+  "resolutions": {
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "axia-dev-build-ts",
+    "build:extra": "(cd packages/dev && copyfiles config/* scripts/* build)",
+    "build:release": "axia-ci-ghact-build --skip-beta",
+    "docs": "axia-dev-build-docs",
+    "lint": "axia-dev-run-lint",
+    "clean": "axia-dev-clean-build",
+    "postinstall": "./packages/dev/scripts/axia-dev-yarn-only.cjs",
+    "prettier": "./packages/dev/scripts/axia-dev-run-prettier.cjs",
+    "test": "yarn build && yarn test:esm && axia-dev-run-test --coverage",
+    "test:esm": "node ./tester.cjs && node ./tester.mjs"
+  },
+  "devDependencies": {
+    "@axia-js/dev": "workspace:packages/dev",
+    "copyfiles": "^2.4.1"
+  },
+  "version": "0.1.0",
+  "packageManager": "yarn@3.0.1"
+}

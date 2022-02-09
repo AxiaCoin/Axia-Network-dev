@@ -1,0 +1,12 @@
+{
+  "name": "@axia-js/unused",
+  "version": "0.1.0",
+  "description": "Dummy",
+  "main": "index.js",
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "bugs": "https://github.com/axia-js/dev/issues",
+  "homepage": "https://github.com/axia-js/dev"
+}
