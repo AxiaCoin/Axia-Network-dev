@@ -4,6 +4,6 @@
 
 # @axia-js/dev
 
-A collection of shared CI scripts and development environment (configuration, dependencies) used by [@axia](https://axia.js.org) projects. Included here -
+A collection of shared CI scripts and development environment (configuration, dependencies) used by [@axia-js](https://github.com/axia-js) projects. Included here -
 
 - [@axia-js/dev](packages/dev/) Common base configurations for our TypeScript projects
